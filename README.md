@@ -62,26 +62,64 @@ Total harga yang harus dibayar oleh anda adalah: Rp50000
 - Mulai (start)
 - Input Tipe Tiket : pengguna memasukan jenis tiket, yaitu berupa REGULER dan VIP
 - Program memeriksa pilihan tiket :
-    1. Jika pengguna memilih "reguler", harga tiket di-set ke harga reguler.
-    2. Jika memilih "VIP", harga tiket di-set ke harga VIP.
-    3. Jika pilihan tidak valid, program memberi tahu pengguna dan berhenti.
+    -     Jika pengguna memilih "reguler", harga tiket di-set ke harga reguler.
+    -     Jika memilih "VIP", harga tiket di-set ke harga VIP.
+    -     Jika pilihan tidak valid, program memberi tahu pengguna dan berhenti.
 - input Status Member :
   Program kemudian bertanya apakah pengguna memiliki kartu member
   dengan jawaban "ya" atau "tidak". Jawaban ini juga diubah menjadi huruf kecil.
 - Program memeriksa apakah pengguna adalah member :
-     1. Jika "ya", total harga dihitung dengan diskon 20%.
-     2. Jika "tidak", total harga sama dengan harga tiket yang dipilih.
-     3. Akhir (End) : proses selesai
+     -      Jika "ya", total harga dihitung dengan diskon 20%.
+     -     Jika "tidak", total harga sama dengan harga tiket yang dipilih.
+     -     Akhir (End) : proses selesai
 
 ## Flowchart Diskon Tiket
   ![Flowchart](new/flowcharttiket.png)
 
 
+## Program Kalkulator Sederhana
+Program kalkulator sederhana untuk menghitung inputan dari user.
 
+## Deskripsi Program
+Program kalkulator sederhana yang mampu melakukan operasi dasar matematika dengan dua bilangan, user bisa memilih operasi yang ingin mereka lakukak (+,-.x.).
 
+## Code Program Kalkulator Sederhana
+````python
+def kalkulator(angka1,angka2,operator) :
+    if operator == '+':
+        return angka1 + angka2
+    elif operator == '-':
+        return angka1 - angka2 
+    elif operator == '*':
+        return angka1 * angka2
+    elif operator == '/':
+        return angka1 / angka2
+    else:
+        print("Input tidak valid")
+        exit()
 
+angka1 = int(input('masukan angka pertama :'))
+angka2 = int(input('masukan angka kedua :'))
+operator = input("masukan operator ('+','-','*','/')")
 
+hasil = kalkulator(angka1, angka2, operator)
+print(f"Hasilnya Adalah : {hasil}")
+````
+## Output Program
+```markdown
+masukan angka pertama :345
+masukan angka kedua :897
+masukan operator ('+','-','*','/')*
+Hasilnya Adalah : 309465
+```
 
 ## Flowchart Kalkulator
   ![Flowchart](new/Flowchartkalkulator.png)
 
+
+## Cara Kerja 
+1. Program meminta input angka pertama
+2. Program meminta input angka kedua
+3. Program meminta input operator matematika
+4. Fungsi kalkulator() memproses input sesuai operator
+5. Menampilkan hasil perhitungan
