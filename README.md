@@ -49,16 +49,16 @@ Total harga yang harus dibayar oleh anda adalah: Rp50000
 - Mulai (start)
 - Input Tipe Tiket : pengguna memasukan jenis tiket, yaitu berupa REGULER dan VIP
 - Program memeriksa pilihan tiket :
-    Jika pengguna memilih "reguler", harga tiket di-set ke harga reguler.
-    Jika memilih "VIP", harga tiket di-set ke harga VIP.
-    Jika pilihan tidak valid, program memberi tahu pengguna dan berhenti.
+    1. Jika pengguna memilih "reguler", harga tiket di-set ke harga reguler.
+    2. Jika memilih "VIP", harga tiket di-set ke harga VIP.
+    3. Jika pilihan tidak valid, program memberi tahu pengguna dan berhenti.
 - input Status Member :
   Program kemudian bertanya apakah pengguna memiliki kartu member
   dengan jawaban "ya" atau "tidak". Jawaban ini juga diubah menjadi huruf kecil.
 - Program memeriksa apakah pengguna adalah member :
-    Jika "ya", total harga dihitung dengan diskon 20%.
-    Jika "tidak", total harga sama dengan harga tiket yang dipilih.
-    Akhir (End) : proses selesai
+     1. Jika "ya", total harga dihitung dengan diskon 20%.
+     2. Jika "tidak", total harga sama dengan harga tiket yang dipilih.
+     3. Akhir (End) : proses selesai
 
 
 
